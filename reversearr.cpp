@@ -8,7 +8,7 @@ int main()
  int ar[]={1,2,3,4,5,6,7,8};
  int n=sizeof(ar)/sizeof(ar[0]);
  print(ar,n);
- reverse(ar,0,n-1);
+ reverse(ar,n);
  print(ar,n);
  return 0;
 }
