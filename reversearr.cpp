@@ -12,20 +12,6 @@ int main()
  print(ar,n);
  return 0;
 }
-/*
-void reverse(int ar[],int n)
-{
- int i=0,j=n-1,temp;
- while(i<j)
- {
-  temp=ar[i];
-  ar[i]=ar[j];
-  ar[j]=temp;
-  i++;
-  j--;
- }
-}
-*/
 
 void reverse(int ar[],int first,int last)
 {
