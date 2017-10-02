@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void reverse(int ar[],int first,int last);
+void reverse(int ar[],int n);
 void print(int ar[],int n);
 int main()
 {
@@ -12,7 +12,6 @@ int main()
  print(ar,n);
  return 0;
 }
-/*
 void reverse(int ar[],int n)
 {
  int i=0,j=n-1,temp;
@@ -24,18 +23,6 @@ void reverse(int ar[],int n)
   i++;
   j--;
  }
-}
-*/
-
-void reverse(int ar[],int first,int last)
-{
- int temp;
- if(first>=last)
-  return;
- temp=ar[first];
- ar[first]=ar[last];
- ar[last]=temp;
- reverse(ar,first+1,last-1);
 }
 
 void print(int ar[],int n)
